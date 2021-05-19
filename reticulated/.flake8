@@ -1,0 +1,13 @@
+# TODO: Merge this into pyproject.toml when it is supported
+#       https://gitlab.com/pycqa/flake8/issues/428
+[flake8]
+max-line-length = 100
+# W503: Line break occurred before a binary operator
+# E203: Whitespace before ':'
+ignore = W503,E203
+application-import-names = reticulated,tests
+docstring-convention = google
+import-order-style = smarkets
+per-file-ignores =
+    **/__init__.py:F401
+    tests/**:D1
